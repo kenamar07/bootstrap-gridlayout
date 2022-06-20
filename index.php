@@ -1,3 +1,20 @@
+<?php
+$server="localhost";
+$username="root";
+$password="";
+$databases="zalego";
+
+$conn = mys
+qli_connect($server, $username, $password, $database);
+if($conn)
+{
+    echo "Database connected successfully";
+}
+else{
+    echo "Error occurred";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,6 +75,7 @@
             </div>
         </div>
         <!-- contact us from here -->
+        <form action="index.php" method="POST">
         <div class="row pt-5                                                                                                                                                                                                                                                                                                                                                                        ">
             <h1>Contact Us</h1>
             <p>
